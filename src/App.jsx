@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 
 const App = () => {
     return (
-        <div className='min-h-screen overflow-hidden p-2'>
+        <div className='min-h-screen overflow-hidden p-2 font-[system-UI]'>
             <Nav />
             <Hero />
         </div>
