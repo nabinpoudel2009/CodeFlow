@@ -6,6 +6,7 @@ import { GiNightSleep } from 'react-icons/gi';
 import { IoSparklesOutline } from "react-icons/io5";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegPlayCircle } from "react-icons/fa";
+import { FaArrowDownLong } from "react-icons/fa6";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
 const Hero = () => {
@@ -23,7 +24,7 @@ const Hero = () => {
     }, [])
 
     return (
-        <section className='relative min-h-screen flex items-center justify-center pt-15 sm:p-20 px-4 sm:px-6 lg:px-10 overflow-x-hidden'>
+        <section className='relative min-h-screen flex items-center justify-center pt-15 sm:p-20 px-4 sm:px-6 lg:px-10 overflow-x-hidden lg:mask-b-from-70% mask-b-from-100%'>
             <div className="absolute inset-0 opacity-50"
                 style={{
                     background: `radial-gradient(400px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 150, 255, 0.2), transparent 100%)`,
@@ -125,6 +126,14 @@ const Hero = () => {
                         <span className={`text-sm font-medium ${floatingCards[activeTab].textColor}`}> {floatingCards[activeTab].title} </span>
                     </div>
                     <div className={`text-xs sm:text-sm font-medium ${floatingCards[activeTab].contentColor}`}> {floatingCards[activeTab].content} </div>
+                </div>
+                <div className="absolute mt-5 left-1/2 -translate-x-10 translate-y-80 flex-col items-center hidden lg:block" id=''>
+                    <span className="text-gray-300 text-xs tracking-widest">
+                        <h6>SCROLL</h6> <FaArrowDownLong  className='ml-5 mt-1 animate-bounce'/>
+                    </span>
+                    <div className="animate-bounce mt-1">
+                        <i className="ri-arrow-down-long-line text-xl text-[#7f7f7f]"></i>
+                    </div>
                 </div>
             </div>
         </section>

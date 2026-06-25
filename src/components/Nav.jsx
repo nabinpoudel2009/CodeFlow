@@ -24,6 +24,7 @@ const Nav = () => {
                     </div>
                     <div className='justify-between items-center space-x-6 hidden md:block'>
                         <a href="#" className='text-gray-300 hover:text-white transition-all duration-200 ease-in-out lg:text-base'>Home</a>
+                        <a href="#features" className='text-gray-300 hover:text-white transition-all duration-200 ease-in-out lg:text-base'>Features</a>
                         <a href="#pricing" className='text-gray-300 hover:text-white transition-all duration-200 ease-in-out lg:text-base'>Pricing</a>
                         <a href="#testimonials" className='text-gray-300 hover:text-white transition-all duration-200 ease-in-out lg:text-base'>Testimonials</a>
                     </div>
@@ -50,6 +51,13 @@ const Nav = () => {
                             onClick={() => setMobileMenuIsOpen((prev) => !prev)}
                         >
                             Home
+                        </a>
+                        <a 
+                            href="#features"
+                            className='text-gray-300 hover:text-white transition-all duration-200 ease-in-out lg:text-base'
+                            onClick={() => setMobileMenuIsOpen((prev) => !prev)}
+                        >
+                            Features
                         </a>
                         <a 
                             href="#pricing" 

@@ -14,3 +14,28 @@
 #fade-up {
     animation: fadeUp 1s ease-out forwards;
 }
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+.animated-text {
+    color: #dedfdf; /* gray-400 */
+    background: linear-gradient(to right, #ffffff 50%, #c2c7cb 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 1s ease-in-out;
+    text-shadow: white;
+}
+
+.animated-text:hover {
+    background-position: left bottom;
+}
