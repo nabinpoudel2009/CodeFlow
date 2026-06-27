@@ -9,6 +9,7 @@ const Nav = () => {
 
     return (
         <nav className='text-white fixed top-0 w-full z-50 transition-all duration-150 ease-in-out bg-slate-950/95 backdrop-blur-xl'>
+
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex justify-between items-center h-14 sm:h-16 md:h-20'>
                     <div className='flex items-center gap-x-1'>
@@ -42,6 +43,7 @@ const Nav = () => {
                     </button>
                 </div>
             </div>
+
             {mobileMenuIsOpen && 
                 <div className='md:hidden bg-slate-900/50 backdrop-blur-lg flex px-3 py-2 border-t'>
                     <div className='flex space-y-3 flex-col'>
@@ -75,7 +77,9 @@ const Nav = () => {
                         </a>
                     </div>
                 </div>
+
             }
+            
         </nav>
     )
 } 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaPause } from "react-icons/fa6";
 
 const testimonials = [
     {
@@ -7,7 +8,7 @@ const testimonials = [
         image:
             "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
         content:
-            "This AI-powered development platform has revolutionized how we write code. The intelligent suggestions save us hours every day.",
+            "This AI-powered development platform has revolutionized how we write code. The intelligent suggestions save us hours every day. ",
     },
 
     {
@@ -59,10 +60,10 @@ const Testimonials = () => {
                         >
                             <div className='flex items-start space-x-3'>
                                 <div className='text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-400 to to-cyan-400 bg-clip-text text-transparent'>''</div>
-                                <h5 className='text-xs sm:text-sm lg:text-lg text-gray-300'>{testimonial.content}</h5>
+                                <h5 className='text-xs sm:text-sm text-gray-300'>{testimonial.content}</h5>
                             </div>
                             <div className='flex items-center gap-x-2'>
-                                <img src={testimonial.image} alt="Developers" className='w-10 md:w-12 h-10 md:h-12 object-cover ml-5 mt-2 rounded-full' />
+                                <img src={testimonial.image} alt="Developers" className='w-10 md:w-12 h-10 md:h-12 object-cover ml-7 mt-2 rounded-full' />
                                 <div className='text-sm lg:text-base mt-1 text-gray-200'>
                                     <h5>{testimonial.name}</h5>
                                     <h4 className='text-gray-500 text-xs lg:text-sm'>{testimonial.role}</h4>
@@ -73,7 +74,7 @@ const Testimonials = () => {
 
                 </div>
             </div>
-
+            
         </section>
     )
 }

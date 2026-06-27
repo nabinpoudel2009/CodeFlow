@@ -25,6 +25,7 @@ const Hero = () => {
 
     return (
         <section className='relative min-h-screen flex items-center justify-center pt-15 sm:p-20 px-4 sm:px-6 lg:px-10 overflow-x-hidden lg:mask-b-from-70% mask-b-from-100%'>
+
             <div className="absolute inset-0 opacity-50"
                 style={{
                     background: `radial-gradient(400px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 150, 255, 0.2), transparent 100%)`,
@@ -136,6 +137,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            
         </section>
     )
 }

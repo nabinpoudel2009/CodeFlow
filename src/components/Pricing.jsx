@@ -64,6 +64,7 @@ const Pricing = () => {
             id='pricing' 
             className="py-16 sm:py-20 px-10 sm:px-6 lg:px-8 relative max-w-7xl mx-auto"
         >
+
             <div className="text-center mb-12 sm:mb-16 lg:mb-20">
                 <h2 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-1">
                     <span className="bg-linear-to-b from-white to-gray-300 bg-clip-text text-transparent">
@@ -125,6 +126,7 @@ const Pricing = () => {
                     <a href="" className='text-blue-400'> Contact us</a>
                 </p>
             </div>
+            
         </section>
     )
 }
