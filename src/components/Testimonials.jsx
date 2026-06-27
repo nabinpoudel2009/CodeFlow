@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaPause } from "react-icons/fa6";
 
 const testimonials = [
     {
@@ -71,8 +70,10 @@ const Testimonials = () => {
                             </div>
                         </div>
                     ))}
+
                 </div>
             </div>
+
         </section>
     )
 }
