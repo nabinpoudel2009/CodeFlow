@@ -3,6 +3,7 @@ import { FaRegStar } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa";
 
 const plan = [
+
     {
         name: "Starter",
         price: "29.99",
@@ -54,6 +55,7 @@ const plan = [
         ],
         mostPopular: false,
     },
+
 ];
 
 const Pricing = () => {
