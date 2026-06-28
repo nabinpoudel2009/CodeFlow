@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaChevronDown, FaPlayCircle } from "react-icons/fa";
-import { codeSnap, floatingCards, textChange } from '../data/codeSnap';
+import { CodeSnap, floatingCards, textChange } from '../data/CodeSnap';
 import { nightOwl } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { GiNightSleep } from 'react-icons/gi';
 import { IoSparklesOutline } from "react-icons/io5";
@@ -114,7 +114,7 @@ const Hero = () => {
                                     scrollbarWidth:"none"
                                 }}
                             >
-                                {codeSnap[activeTab]}
+                                {CodeSnap[activeTab]}
                             </SyntaxHighlighter>
                         </div>
                     </div>

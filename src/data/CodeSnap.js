@@ -1,6 +1,6 @@
 
 
-export const codeSnap = {
+export const CodeSnap = {
     "App.jsx": `
 import { useState } from "react";
 import { CodeFlow } from "codeflow/ai";
